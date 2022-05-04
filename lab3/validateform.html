@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Đăng kí</title>
+        <style type="text/css">
+		table, th, td{
+                     border:1px solid black;
+                }
+                table{
+                    border-collapse:collapse;
+                }
+	</style>
+</head>
+<body>
+        <form method="post" action="" id="loginform">
+                <table border="1" cellpadding="10">
+                    <tr>
+                        <td>Tên đăng nhập: </td>
+                        <td>
+                            <input type="text" id="username" name="username" value=""/><br/>
+                            <span id="username_error"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mật khẩu: </td>
+                        <td>
+                            <input type="text" id="password" name="password" value=""/><br/>
+                            <span id="password_error"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nhập lại mật khẩu: </td>
+                        <td>
+                            <input type="text" id="repassword" name="repassword" value=""/><br/>
+                            <span id="repassword_error"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phone: </td>
+                        <td>
+                            <input type="text" id="phone" name="phone" value=""/><br/>
+                            <span id="phone_error"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email </td>
+                        <td>
+                            <input type="text" id="email" name="email" value=""/><br/>
+                            <span id="email_error"></span>
+                        </td>
+                    </tr>
+             
+                    <tr>
+                        <td>Địa chỉ </td>
+                        <td>
+                            <input type="text" id="address" name="address" value=""/><br/>
+                            <span id="address_error"></span>
+                        </td>
+                    </tr>
+             
+                    <tr>
+                        <td></td>
+                        <td>
+             
+                            <input type="submit" id="btn" name="btn" value="Đăng ký"/><br/>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+</body>
+<script type="text/javascript">
+function getValue(id){
+    return document.getElementById(id).value.trim();
+}
+function showError(key, mess){
+    document.getElementById(key + '_error').innerHTML = mess;
+}
+var form =document.getElementById('btn');
+btn.onclick = function validate()
+{
+    var flag = true;
+     
+    // 1 username
+    var username = getValue('username');
+    if (username == ''|| !/^[a-zA-Z0-9]+$/.test(username)){
+        flag = false;
+        showError('username', 'Tên đăng nhập chưa hợp lệ');
+    }
+     
+    // 2. password
+    var password = getValue('password');
+    var repassword = getValue('repassword');
+    if (password == '' ){
+        flag = false;
+        showError('password', 'Bạn chưa nhập mật khẩu');
+    }
+    if (password != repassword){
+            flag = false;
+            showError('repassword', 'Mật khẩu không trùng khớp')
+    }
+     
+    // 3. Phone
+    var phone = getValue('phone');
+    if (phone != '' &&  !/^[0-9]{10}$/.test(phone)){
+        flag = false;
+        showError('phone', 'Vui lòng kiểm tra lại Phone');
+    }
+     
+    // 4. Email
+    var email = getValue('email');
+    var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if (!mailformat.test(email)){
+        flag = false;
+         
+        showError('email', 'Email vừa nhập không hợp lệ');
+    }
+     
+    return flag;
+}
+
+</script>
+</html>
