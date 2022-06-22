@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<students>
+    <student>
+        <mssv>20194183</mssv>
+        <fullname>Mai Văn Tiến</fullname>
+        <class>KHMT01-K64</class>
+        <school>Công nghệ thông tin và truyền thông</school>
+        <address>Hà Nội</address>
+        <phone>0825761107</phone>
+    </student>
+	
+</students>

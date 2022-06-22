@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Placemark>
+    <name>Giáp Bát, Hoàng Mai, Hà Nội</name>
+    <description>Địa chỉ nhà</description>
+    <Point>
+      <coordinates>20.983787, 105.843935</coordinates>
+    </Point>
+  </Placemark>
+</kml>
