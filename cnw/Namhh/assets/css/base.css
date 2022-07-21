@@ -1,0 +1,131 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --red-color: #cd1817;
+    --height-img: 214px;
+    
+
+}
+
+*{
+    box-sizing: inherit;
+    -webkit-box-sizing: border-box;
+
+}
+
+html {
+    font-size: 87.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    font-weight: 400;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+    /* font-size: 100%; */
+}
+
+body div{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: 400;
+    vertical-align: baseline;
+    background: 0 0;
+}
+
+div{
+    display: block;
+}
+nav{
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: 400;
+    vertical-align: baseline;
+    background: 0 0;
+}
+
+ul{
+    list-style: none;
+    
+}
+
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+form{
+    
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: 400;
+    vertical-align: baseline;
+    background: 0 0;
+   
+}
+
+label{
+    cursor: pointer;
+}
+
+input{
+    margin: 0;
+    overflow: visible;
+}
+
+button{
+    width: auto;
+    overflow: visible;
+    margin: 0;
+    cursor: pointer;
+    
+}
+
+i{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: 0 0;
+}
+a{
+    color: #0168fa;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+a:active, a:focus, a:hover{
+    outline: 0;
+    text-decoration: none;
+    color: #000;
+}
+
+img{
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+
+.grid__full-width {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid__grow{
+    display: flex;
+    flex-wrap: wrap;
+}

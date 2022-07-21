@@ -1,0 +1,421 @@
+.fs-header{
+    z-index: 100;
+}
+
+.fs-header{
+    z-index: 100;
+    position: relative;
+    height: 90px;
+    background-color: #cd1818;
+}
+
+.f-hdtop{
+    position: relative;
+    height: 56px;
+    background-color: #cd1818;
+    
+}
+
+.f-wrap{
+    height: 100%;
+    background-color: #cd1818;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1200px;
+    padding: 0 8px;
+
+}
+
+.fs-logo{
+    width: 187px;
+    height: 46px;
+    margin-top: 10px;
+    display: inline-block;
+    float: left;
+    position: relative;
+    z-index: 10;
+}
+
+.f-logo{
+    width: 151px;
+    height: 40px;
+    background-position: -2px -7px;
+
+}
+
+.ficon{
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(/assets/img/iconhd.png);
+    
+}
+
+.fs-header, .f-hdtop, .f-wrap{
+    overflow: unset !important;
+}
+
+
+.fs-hdmn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+}
+
+.fs-hdmn>li:first-child{
+    margin-left: 0;
+}
+
+.fs-hdmn>li{
+    height: 55px;
+    padding: 6px 2px 0 2px;
+    margin-left: 20px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+a{
+    color: #0168fa;
+    text-decoration: none;
+    background-color: transparent;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: 0 0;
+}
+
+.base-ic{
+    font-family: header-icon!important;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.fs-hdmn>li>a i{
+    color: #fff;
+    font-size: 24px;
+}
+
+.fa-solid{
+    width: 24px;
+    height: 24px;
+    margin-bottom: 1px;
+}
+
+.fs-hdmn>li span{
+    display: block;
+    color: #fff;
+    font-size: 12px;
+
+}
+
+
+.fs-hdmsub{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    width: 200px;
+    padding: 13px 20px;
+    background: #fff;
+    border: solid 1px #d3d3d3;
+    box-shadow: 0 6px 12px  rgba(0 0 0 / 18%);
+    transition: .2s ease-out;
+    /* -webkit-box-shadow: 0 2px 10px 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 2px 10px 0 rgb(0 0 0 / 20%);
+    -o-transition: .2s ease-out;
+    -webkit-transition: .2s ease-out;
+    -webkit-box-shadow: 0 2px 10px 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 2px 10px 0 rgb(0 0 0 / 20%);
+    -webkit-box-shadow: 0 6px 12px rgb(0 0 0 / 18%); */
+}
+
+.fs-hdmsnews{
+    top: 75px;
+}
+
+.fs-hdmsub>li {
+    text-align: left;
+}
+
+.fs-hdmsub>li>a{
+    display: block;
+    font-size: 24px;
+    line-height: 2.43;
+    color: #3d3d3d;
+}
+
+.fs-search{
+    float: left;
+    margin-top: 10px;
+
+}
+
+.fs-search form{
+    width: 540px;
+}
+
+.fs-search>form{
+    max-width: 470px;
+
+}
+
+.fs-search>form{
+    display: block;
+    width: 604px;
+    position: relative;
+    z-index: 11;
+}
+
+.mf-vhiditem{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.fs-search>form>input{
+    padding: 0 0 0 16px;
+
+}
+
+.fs-search>form>input{
+    width: 100%;
+    height: 38px;
+    border: none;
+    font-size: 14px;
+    padding: 0 60px 0 10px;
+    background: #fff;
+    border-radius: 2px;
+}
+
+.icon-cance{
+    position: absolute;
+    z-index: 1;
+    color: #a2a2a2;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    padding-right: 68px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.fs-search>form>button {
+    z-index: 2;
+}
+
+.fs-search>form>button {
+    width: 58px;
+    height: 38px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    background: #333;
+    border-radius: 0 2px 2px 0;
+}
+
+
+.fs-search>form .search-button i{
+    color: #fff;
+    font-size: 20px;
+
+}
+
+.f-search{
+    width: 22px;
+    height: 22px;
+    background-position: -7px -87px;
+}
+
+.fs-sresult{
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 39px;
+    z-index: 11;
+}
+
+.fs-remain{
+    margin-right: 58px;
+    background-color: #fff;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
+}
+
+.suggest-box .sugg-his{
+    padding: 16px 0 12px;
+}
+
+.suggest-box{
+    display: none;
+    position: absolute;
+    width: 540px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 25%);
+    background-color: #fff;
+    z-index: 100;
+    border-radius: 0 0 4px 4px;
+}
+
+.suggest-box a{
+    color: #495057;
+    display: block;
+}
+
+.suggest-title{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #6c757d;
+    background-color: #f8f9fa;
+    padding: 2px 16px;
+    margin-bottom: 4px;
+}
+
+.suggest-box .ic-clear{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #0168fa;
+    float: right;
+    cursor: pointer;
+}
+
+.suggest-box .suggest-box-propensity{
+    padding: 16px 0 12px;
+}
+
+.suggest{
+    display: flex;
+    width: 750px;
+    border-top-right-radius: 4px;
+}
+
+
+.suggest-left{
+    width: 350px;
+    padding: 8px 0;
+}
+
+.fs-resulf-box:not(:last-child){
+    margin-bottom: 16px;
+
+}
+
+.fs-suggest-page{
+    padding: 0 16px;
+
+}
+
+.sg-p{
+    padding: 4px 16px 4px;
+}
+
+.suggest-box a{
+    color: #495057;
+    display: block;
+}
+
+.fs-suggest-tags{
+    margin-top: 4px;
+}
+
+.fs-suggest-tags ul{
+    max-height: 50px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    columns: unset !important;
+    -webkit-columns: unset!important;
+    padding: 0 4px;
+}
+
+.fs-suggest-tags ul li {
+    width: 50%;
+    padding: 4px 4px 4px 12px;
+}
+
+.fs-suggest-tags ul .sg-p a{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.suggest-right{
+    padding-bottom: 8px;
+}
+
+.suggest-right{
+    width: 400px;
+    border-left: 1px solid #e7e6e6;
+}
+
+.suggest-right .suggest-title{
+    margin-bottom: 0;
+}
+
+
+.fs-suggest-product li{
+    padding: 8px 16px;
+}
+
+.fs-suggest-product li:not(:last-child){
+    box-shadow: 0 1px 0 0 #e7e6e6;
+
+}
+
+.pr-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pr-item__img{
+    width: 60px;
+    height: 60px;
+}
+
+.m-r-8{
+    margin-right: 8px;
+}
+
+.fs-menu{
+    height: 36px;
+
+    position: relative;
+    z-index: 9;
+    background: #252525;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
